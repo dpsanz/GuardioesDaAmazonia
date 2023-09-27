@@ -1,4 +1,4 @@
-Ao clonar o repositório execute npm intall e npm run start
+Ao clonar o repositório execute npm intall e npm run start.
 
 
 # GuardioesDaAmazonia
