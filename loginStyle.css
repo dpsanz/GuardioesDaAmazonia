@@ -154,3 +154,19 @@ button:hover{
 .register p a:hover {
     text-decoration: underline;
 }
+
+.texto {
+    display: flex;
+}
+
+.texto #log {
+    margin-left: 34%;
+}
+
+.texto #voltar:hover {
+    color: #099443;
+    border-color: #fff;
+    text-shadow: 
+    0 0 7px #099443;
+
+}
