@@ -40,8 +40,8 @@ section {
 
 .form-box {
     position: relative;
-    width: 400px;
-    height: 450px;
+    width: max-content;
+    height: max-content;
     background: transparent;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 20px;
@@ -59,7 +59,7 @@ h2 {
 
 .inputbox {
     position: relative;
-    margin: 30px 0;
+    margin: 30px 19px 0 19px;
     width: 310px;
     border-bottom: 2px solid #fff;
 }
@@ -122,7 +122,7 @@ input:valid ~ label{
 }
 
 button{
-    width: 100%;
+    width: 80%;
     padding: 1rem 1rem;
     font-size: 1rem;
     color: #fff;
@@ -153,4 +153,14 @@ button:hover{
 
 .register p a:hover {
     text-decoration: underline;
+}
+
+#loginButton {
+    margin: 35px;
+}
+
+.form-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
