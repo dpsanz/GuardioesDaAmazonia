@@ -43,6 +43,9 @@ nav {
     align-items: center;
     gap: 2rem;
 }
+.nav-buton {
+    position: absolute;
+}
 
 .link a{
     position: relative;
