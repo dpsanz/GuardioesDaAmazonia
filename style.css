@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 *{
     padding: 0;
@@ -21,18 +22,19 @@ body {
 }
 nav {
     display: flex;
-    padding: 1.2rem 1rem 0.8rem 1.2rem;
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem;
     justify-content: space-between;
     align-items: center;
     border-bottom-style: solid;
-    border-color: #c7ffb1;
+    border-color: #ffffff;
     border-width: 1px;
-
+    background-color: #181818;
 }
-#logo {
-    color: #c7ffb1;
+nav img {
+    width: 60px;
 }
 .nav-links ul li {
+    font-weight: bold;
     list-style: none;
     display: inline-block;
     padding: 1rem 1.2rem;
@@ -45,6 +47,18 @@ nav {
 
     transition: .3s;
 }
+.nav-links ul li #login{
+    color: #9CAEFF;
+    text-decoration: none;
+    font-size: 16px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 6px 25px;
+    border-color: #9CAEFF;
+
+    transition: .3s;
+}
 
 .nav-links ul li a:hover{
     color: #f2ffed;
@@ -52,4 +66,27 @@ nav {
     font-size: 16px;
     text-shadow: 0 0 15px #c7ffb1;
 }
+.nav-links ul li #login:hover{
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 6px 25px;
+    border-color: #9CAEFF;
+    background-color: #1e2236;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: none;
+}
 
+.head1 {
+    background-image: url(img/background.jpg);
+    background-position: 100%;
+    background-size: cover;
+    padding: 1rem;
+}
+.head1 h1 {
+    text-align: center;
+    font-family: 'EB Garamont';
+    color: #f2ffed;
+    text-shadow: 0 0 15px #181818;
+}
