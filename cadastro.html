@@ -15,60 +15,63 @@
                     <h2 id="log">Cadastro</h2>
                 </div>
                 
-                <form action="" style="display: flex;">
-                    <div>
-                        <div class="inputbox">
-                            <ion-icon name="person"></ion-icon>
-                            <input id="email" type="text" required>
-                            <label for="">Nome</label>
+                <form action="/cadastroOng" method="post">
+                    <div  style="display: flex;">
+                        <div>
+                            <div class="inputbox">
+                                <ion-icon name="person"></ion-icon>
+                                <input name="nome" type="text" required>
+                                <label for="">Nome</label>
+                            </div>
+                            <div class="inputbox">
+                                <ion-icon name="mail"></ion-icon>
+                                <input name="email" type="email" required>
+                                <label for="">Email</label>
+                            </div>
+                            <div class="inputbox">
+                                <ion-icon name="lock-closed"></ion-icon>
+                                <input name="password" type="password" required>
+                                <label for="">Senha</label>
+                            </div>
                         </div>
-                        <div class="inputbox">
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <input id="email" type="text" required>
-                            <label for="">Email</label>
+                        <div>
+                            <div class="inputbox">
+                                <ion-icon name="pin"></ion-icon>
+                                <input name="endereco" type="text">
+                                <label for="">Endereço</label>
+                            </div>
+                            <div class="inputbox">
+                                <ion-icon name="locate"></ion-icon>
+                                <input name="complemento" type="text">
+                                <label for="">Complemento</label>
+                            </div>
+                            <div class="inputbox">
+                                <ion-icon name="compass"></ion-icon>
+                                <input name="numero" type="number">
+                                <label for="">Número</label>
+                            </div>
                         </div>
-                        <div class="inputbox">
-                            <ion-icon name="call"></ion-icon>
-                            <input id="email" type="text" required>
-                            <label for="">Celular</label>
+                        <div>
+                            <div class="inputbox">
+                                <ion-icon name="navigate"></ion-icon>
+                                <input name="bairro" type="text">
+                                <label for="">Bairro</label>
+                            </div>
+                            <div class="inputbox">
+                                <ion-icon name="map"></ion-icon>
+                                <input name="cidade" type="text">
+                                <label for="">Cidade</label>
+                            </div>
+                            <div class="inputbox">
+                                <ion-icon name="call"></ion-icon>
+                                <input name="telefone" type="number">
+                                <label for="">Telefone</label>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="inputbox">
-                            <ion-icon name="pin"></ion-icon>
-                            <input id="email" type="text" required>
-                            <label for="">Endereço</label>
-                        </div>
-                        <div class="inputbox">
-                            <ion-icon name="locate"></ion-icon>
-                            <input id="password" type="password" required>
-                            <label for="">Complemento</label>
-                        </div>
-                        <div class="inputbox">
-                            <ion-icon name="compass"></ion-icon>
-                            <input id="email" type="text" required>
-                            <label for="">Número</label>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="inputbox">
-                            <ion-icon name="navigate"></ion-icon>
-                            <input id="email" type="text" required>
-                            <label for="">Bairro</label>
-                        </div>
-                        <div class="inputbox">
-                            <ion-icon name="map"></ion-icon>
-                            <input id="password" type="password" required>
-                            <label for="">Cidade</label>
-                        </div>
-                        <div class="inputbox">
-                            <ion-icon name="airplane"></ion-icon>
-                            <input id="email" type="text" required>
-                            <label for="">UF</label>
-                        </div>
-                    </div>
+                    <button id="loginButton" type="submit">Registrar</button>
                 </form>
-                <button id="loginButton" type="submit" onclick="index()">Registrar</button>
+                
             </div>
         </div>
     </section>
