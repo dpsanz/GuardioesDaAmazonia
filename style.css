@@ -13,7 +13,7 @@
 
 body {
     font-family: 'Poppins';
-    background-color: #181818;
+    background-color: #0f0f0f;
 }
 
 .header {
@@ -25,10 +25,7 @@ nav {
     padding: 0.6rem 1.2rem 0.6rem 1.2rem;
     justify-content: space-between;
     align-items: center;
-    border-bottom-style: solid;
-    border-color: #ffffff;
-    border-width: 1px;
-    background-color: #181818;
+    background-color: #000000;
 }
 nav img {
     width: 60px;
@@ -48,20 +45,20 @@ nav img {
     transition: .3s;
 }
 .nav-links ul li #login{
-    color: #9CAEFF;
+    color: #c7ffb1;
     text-decoration: none;
     font-size: 16px;
     border-style: solid;
     border-radius: 10px;
     border-width: 1px;
     padding: 6px 25px;
-    border-color: #9CAEFF;
+    border-color: #c7ffb1;
 
     transition: .3s;
 }
 
 .nav-links ul li a:hover{
-    color: #f2ffed;
+    color: #c7ffb1;
     text-decoration: none;
     font-size: 16px;
     text-shadow: 0 0 15px #c7ffb1;
@@ -71,8 +68,8 @@ nav img {
     border-radius: 10px;
     border-width: 1px;
     padding: 6px 25px;
-    border-color: #9CAEFF;
-    background-color: #1e2236;
+    border-color: #c7ffb1;
+    background-color: #0d3000;
     text-decoration: none;
     font-size: 16px;
     text-shadow: none;
@@ -86,7 +83,12 @@ nav img {
 }
 .head1 h1 {
     text-align: center;
-    font-family: 'EB Garamont';
     color: #f2ffed;
     text-shadow: 0 0 15px #181818;
+    font-size: 2rem;
+}
+
+.head1 h2 {
+    text-align: center;
+    color: white;
 }
