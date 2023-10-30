@@ -78,20 +78,12 @@ nav img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 536px;
-    
-    background-position: center;
-    background-size:cover;
-    
-    background-repeat: no-repeat;
     justify-content: center;
 }
 
 .main1 img {
-    filter: blur(2.5px);
     position: absolute;
     width: 100%;
-    height: 100%;
     z-index: -100;
 }
 
@@ -106,6 +98,7 @@ nav img {
     font-size: 25px;
     color: #588647;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .main1 div {
@@ -117,6 +110,7 @@ nav img {
     align-items: center;
     flex-direction: column;
     margin-top: 5%;
+    background-color: black;
 }
 
 .main2 h1 {
@@ -186,4 +180,50 @@ nav img {
     text-decoration: none;
     font-size: 50px;
     text-shadow: none;
+}
+
+@media (max-width: 1267px) {
+    .main2 div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main2 p {
+        max-width: 801px;
+        margin-bottom: 50px;
+    }
+    .main2 h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 951px) {
+    .main1 h1 {
+        text-align: center;
+        font-size: 10vh;
+    }
+}
+
+@media (max-width: 663px) {
+    .main2 img {
+        width: 512px;
+        height: 384px;
+        flex-shrink: 0;
+    }
+    .main2 p {
+        font-size: 20px;
+        min-width: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 515px) {
+    .main2 img {
+        width: 364px;
+        height: 273px;
+        flex-shrink: 0;
+    }
+    .main1 h1 {
+        text-align: center;
+        font-size: 7vh;
+    }
 }
