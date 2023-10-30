@@ -16,9 +16,14 @@ body {
     background-color: #0f0f0f;
 }
 
-.header {
+.sec1 {
+    background-image: url(img/back.jpg);
+    background-position: 100%;
+    background-size: cover;
     min-height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 nav {
     display: flex;
@@ -76,19 +81,44 @@ nav img {
 }
 
 .head1 {
-    background-image: url(img/background.jpg);
-    background-position: 100%;
-    background-size: cover;
-    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+
 }
 .head1 h1 {
     text-align: center;
     color: #f2ffed;
     text-shadow: 0 0 15px #181818;
-    font-size: 2rem;
+    font-size: 4rem;
+
 }
 
 .head1 h2 {
     text-align: center;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    color: #0d3000;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #c7ffb1;
+    border-radius: 10px;
+  }
