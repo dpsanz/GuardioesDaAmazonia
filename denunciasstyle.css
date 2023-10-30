@@ -227,3 +227,12 @@ nav img {
         font-size: 7vh;
     }
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c7ffb1;
+    border-radius: 10px;
+}
