@@ -35,6 +35,7 @@ nav {
 nav img {
     width: 60px;
 }
+
 .nav-links ul li {
     font-weight: bold;
     list-style: none;
@@ -43,21 +44,21 @@ nav img {
     position: relative;
 }
 .nav-links ul li a{
-    color: #c7ffb1;
+    color: #ffffff;
     text-decoration: none;
     font-size: 16px;
 
     transition: .3s;
 }
 .nav-links ul li #login{
-    color: #c7ffb1;
+    color: #ffffff;
     text-decoration: none;
     font-size: 16px;
     border-style: solid;
     border-radius: 10px;
     border-width: 1px;
-    padding: 6px 25px;
-    border-color: #c7ffb1;
+    padding: 6px 30px;
+    border-color: #ffffff;
 
     transition: .3s;
 }
@@ -72,7 +73,8 @@ nav img {
     border-style: solid;
     border-radius: 10px;
     border-width: 1px;
-    padding: 6px 25px;
+    padding: 6px 30px;
+    color: #c7ffb1;
     border-color: #c7ffb1;
     background-color: #0d3000;
     text-decoration: none;
