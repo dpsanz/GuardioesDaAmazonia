@@ -71,7 +71,7 @@ app.post("/cadastroOng", async(req, res)=>{
 
 })
 
-app.get("/cadatroong", async(req, res)=> {
+app.get("/cadastroOng", async(req, res)=> {
     res.sendFile(__dirname + "/cadastro.html")
 })
 
