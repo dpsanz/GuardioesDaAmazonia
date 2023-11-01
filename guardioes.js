@@ -59,7 +59,7 @@ app.post("/cadastroOng", async(req, res)=>{
     })
 
     try {
-        const newOng = await pessoa.save();
+        const newOng = await ong.save();
 
         res.json({error : null, msg : "Cadastro feito com sucesso", ongId : newOng._id});
     }
