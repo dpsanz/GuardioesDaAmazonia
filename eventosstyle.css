@@ -83,3 +83,15 @@ nav img {
     background: #c7ffb1;
     border-radius: 10px;
 }
+
+.main01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main01 img{
+    position: absolute;
+    width: 100%;
+}
