@@ -126,7 +126,7 @@ nav img {
 .main02 p{
     color: #C7FFB1;
     font-family: Poppins;
-    font-size: 38px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -135,8 +135,8 @@ nav img {
 }
 
 .main02 img{
-    width: 662px;
-    height: 497px;
+    width: 550px;
+    height: 400px;
     flex-shrink: 0;
 }
 
@@ -198,8 +198,8 @@ nav img {
 }
 
 .main04 img{
-    width: 662px;
-    height: 497px;
+    width: 500px;
+    height: 400px;
     flex-shrink: 0;
 }
 
@@ -252,12 +252,18 @@ nav img {
 .main06 p{
     color: #C7FFB1;
     font-family: Poppins;
-    font-size: 30px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     min-width: 601px;
     max-width: 601px;
+}
+
+.main06 img{
+    width: 300px;
+    height: 400px;
+    flex-shrink: 0;
 }
 
 .main06 div{
