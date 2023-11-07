@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const express = require("express");
 const bodyParser = require("body-parser");
-const async = require("hbs/lib/async");
 const app = express();
 
 const port = 3000;
@@ -46,6 +45,12 @@ app.post("/cadastroOng", async(req, res)=>{
         return res.status(400).json({error: "Preencher todos os campos"})
     }
 
+    const emailExiste = await Ong.findOne({email:email});
+
+    if(emailExiste) {
+        return res.status(400).json({error: "O email informado já existe"})
+    }
+
     const ong = new Ong ({
         nome: nome,
         email: email,
@@ -78,6 +83,10 @@ app.get("/cadastroOng", async(req, res)=> {
 app.get("/", async(req, res)=>{
     res.sendFile(__dirname + "/index.html");
 });
+
+app.get("/loginOng", async(req, res)=>{
+    res.sendFile(__dirname + "/login.html")
+})
 
 app.listen(port, ()=>{
     console.log(`O servidor está rodando na porta ${port}`)
