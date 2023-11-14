@@ -82,3 +82,77 @@ nav img {
     background: #c7ffb1;
     border-radius: 10px;
 }
+
+.main01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main01 img{
+    position: absolute;
+    width: 100%;
+    z-index: -100;
+}
+
+.main01 h1{
+    font-size: 20vh;
+    color: #588647;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.main02{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20%;
+    background-color: black;
+}
+
+.main02 h1{
+    color: #C7FFB1;
+    text-shadow: 56px 35px 11px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 45px;
+}
+
+.main02 div h1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main02 div p{
+    color: #C7FFB1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 800px;
+    font-size: 20px;
+}
+
+.main03{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20%;
+    
+}
+
+.main03 div{
+    width: 100%;
+    display: flex;
+    color: #C7FFB1;
+    width: 100%;
+    display: flex;
+    margin-left: 500px;
+    font-size: 20px;
+}
+
+
