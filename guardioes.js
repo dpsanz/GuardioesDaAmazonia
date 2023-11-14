@@ -14,7 +14,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/guardioesdaamazonia', {
     serverSelectionTimeoutMS: 20000
 })
 
-const OngSchema = new mongoose.Schema({
+const UsuarioSchema = new mongoose.Schema({
     nome: {type: String, required: true},
     email: {type: String, required: true},
     endereco: {type: String},
@@ -26,9 +26,9 @@ const OngSchema = new mongoose.Schema({
     telefone: {type: Number} 
 })
 
-const Ong = mongoose.model("Ong", OngSchema);
+const Usuario = mongoose.model("Usuario", UsuarioSchema);
 
-app.post("/cadastroOng", async(req, res)=>{
+app.post("/cadastro", async(req, res)=>{
     const nome = req.body.nome;
     const email = req.body.email;
     const endereco = req.body.endereco;
@@ -51,7 +51,7 @@ app.post("/cadastroOng", async(req, res)=>{
         return res.status(400).json({error: "O email informado já existe"})
     }
 
-    const ong = new Ong ({
+    const usuario = new Usuario ({
         nome: nome,
         email: email,
         endereco: endereco,
@@ -64,9 +64,9 @@ app.post("/cadastroOng", async(req, res)=>{
     })
 
     try {
-        const newOng = await ong.save();
+        const newUsuario = await usuario.save();
 
-        res.json({error : null, msg : "Cadastro feito com sucesso", ongId : newOng._id});
+        res.json({error : null, msg : "Cadastro feito com sucesso", usuarioId : newUsuario._id});
     }
     catch(error){
         res.status(400).json({error});
@@ -76,7 +76,7 @@ app.post("/cadastroOng", async(req, res)=>{
 
 })
 
-app.get("/cadastroOng", async(req, res)=> {
+app.get("/cadastro", async(req, res)=> {
     res.sendFile(__dirname + "/cadastro.html")
 })
 
@@ -84,7 +84,7 @@ app.get("/", async(req, res)=>{
     res.sendFile(__dirname + "/index.html");
 });
 
-app.get("/loginOng", async(req, res)=>{
+app.get("/login", async(req, res)=>{
     res.sendFile(__dirname + "/login.html")
 })
 
