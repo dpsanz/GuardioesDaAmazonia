@@ -82,14 +82,18 @@ nav img {
     text-shadow: none;
 }
 
+.div1 {
+    backdrop-filter: brightness(64%);
+    height: 100vh;
+}
+
 .head1 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
     width: 100%;
-
 }
 .head1 h1 {
     text-align: center;
@@ -104,14 +108,53 @@ nav img {
     color: white;
 }
 
+#vejamais {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 10%;
+    text-shadow: 0 0 15px #5aff75;
+}
 
 
+.sec2 {
+    border-top-style: solid;
+    background-image: url(img/dark.jpg);
+    background-position: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+.div2 {
+    height: 100vh;
+    backdrop-filter: blur(10px);
 
+}
 
+.head2 {
+    text-align: center;
+    width: 100%;
+}
+.head2 h1 {
+    text-align: center;
+    color: #f2ffed;
+    text-shadow: 0 0 15px #181818;
+    font-size: 2rem;
 
+}
 
-
+.head2 h2 {
+    text-align: center;
+    color: white;
+}
 
 ::-webkit-scrollbar {
     width: 8px;
