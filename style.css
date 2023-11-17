@@ -55,9 +55,8 @@ nav img {
     text-decoration: none;
     font-size: 16px;
     border-style: solid;
-    border-radius: 10px;
     border-width: 1px;
-    padding: 6px 30px;
+    padding: 5px 30px;
     border-color: #ffffff;
 
     transition: .3s;
@@ -70,13 +69,13 @@ nav img {
     text-shadow: 0 0 15px #c7ffb1;
 }
 .nav-links ul li #login:hover{
+    letter-spacing: 0.25em;
     border-style: solid;
-    border-radius: 10px;
     border-width: 1px;
-    padding: 6px 30px;
+    padding: 5px 30px;
     color: #c7ffb1;
     border-color: #c7ffb1;
-    background-color: #0d3000;
+    
     text-decoration: none;
     font-size: 16px;
     text-shadow: none;
@@ -118,7 +117,7 @@ nav img {
     transform: translate(-50%,-50%);
     text-align: center;
     width: 10%;
-    text-shadow: 0 0 15px #5aff75;
+    text-shadow: 0 0 15px #00b31e;
 }
 
 
@@ -134,8 +133,9 @@ nav img {
 }
 
 .div2 {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    backdrop-filter: blur(10px);
 
 }
 
