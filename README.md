@@ -1,4 +1,4 @@
-Ao clonar o repositório execute npm run start no terminal e entre no endereço localhost:3000 no seu navegador.
+Ao clonar o repositório execute npm run start no terminal, então entre no endereço localhost:3000 no seu navegador.
 
 
 # GuardioesDaAmazonia
