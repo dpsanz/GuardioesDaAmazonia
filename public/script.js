@@ -1,8 +1,8 @@
 function login() {
-    window.location.href = "/login";
+    window.location.href = "/login.html";
 }
 
 function index() {
-    window.location.href = "/";
+    window.location.href = "/index.html";
 }
 

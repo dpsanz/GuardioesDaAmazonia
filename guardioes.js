@@ -29,7 +29,7 @@ const UsuarioSchema = new mongoose.Schema({
 
 const Usuario = mongoose.model("Usuario", UsuarioSchema);
 
-app.post("/cadastro", async(req, res)=>{
+app.post("/cadastro.html", async(req, res)=>{
     const nome = req.body.nome;
     const email = req.body.email;
     const endereco = req.body.endereco;
@@ -72,7 +72,7 @@ app.post("/cadastro", async(req, res)=>{
     }
 });
 
-app.post("/login", async(req, res)=>{
+app.post("/login.html", async(req, res)=>{
     const email = req.body.email;
     const password = req.body.password;
 
@@ -93,27 +93,31 @@ app.post("/login", async(req, res)=>{
     }
 })
 
-app.get("/cadastro", async(req, res)=> {
+app.get("/", async(req, res)=> {
+    res.sendFile(__dirname + "/index.html")
+})
+
+app.get("/cadastro.html", async(req, res)=> {
     res.sendFile(__dirname + "/cadastro.html")
 })
 
-app.get("/contato", async(req, res)=> {
+app.get("/contato.html", async(req, res)=> {
     res.sendFile(__dirname + "/contato.html")
 })
 
-app.get("/denuncias", async(req, res)=> {
+app.get("/denuncias.html", async(req, res)=> {
     res.sendFile(__dirname + "/denuncias.html")
 })
 
-app.get("/eventos", async(req, res)=> {
+app.get("/eventos.html", async(req, res)=> {
     res.sendFile(__dirname + "/eventos.html")
 })
 
-app.get("/", async(req, res)=>{
+app.get("/index.html", async(req, res)=>{
     res.sendFile(__dirname + "/index.html");
 });
 
-app.get("/login", async(req, res)=>{
+app.get("/login.html", async(req, res)=>{
     res.sendFile(__dirname + "/login.html")
 })
 
