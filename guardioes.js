@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
+app.use(express.static('public'));
 
 const port = 3000;
 
@@ -78,6 +79,18 @@ app.post("/cadastro", async(req, res)=>{
 
 app.get("/cadastro", async(req, res)=> {
     res.sendFile(__dirname + "/cadastro.html")
+})
+
+app.get("/contato", async(req, res)=> {
+    res.sendFile(__dirname + "/contato.html")
+})
+
+app.get("/denuncias", async(req, res)=> {
+    res.sendFile(__dirname + "/denuncias.html")
+})
+
+app.get("/eventos", async(req, res)=> {
+    res.sendFile(__dirname + "/eventos.html")
 })
 
 app.get("/", async(req, res)=>{

@@ -122,19 +122,23 @@ input:valid ~ label{
 }
 
 button{
+    font-weight: bolder;
+    letter-spacing: 0.1em;
     width: 100%;
     padding: 1rem 1rem;
     font-size: 1rem;
     color: #fff;
     background-color: transparent;
-    border-color: #58ff9e;
-    border-radius: 5px;
+    border-color: #ffffff;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 button:hover{
-    background-color: #099443;
+    letter-spacing: 0.25em;
+    background-color: #1f7400;
+    border-color: #c7ffb1;
+    box-shadow: 0 0 10px #c7ffb1;
 }
 
 .register {
@@ -153,4 +157,29 @@ button:hover{
 
 .register p a:hover {
     text-decoration: underline;
+}
+
+.texto {
+    display: flex;
+}
+
+.texto #log {
+    padding-left: 5.4rem;
+}
+
+.texto #voltar:hover {
+    color: #c7ffb1;
+    border-color: #fff;
+    text-shadow: 
+    0 0 7px #099443;
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c7ffb1;
+    border-radius: 10px;
 }
