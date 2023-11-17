@@ -73,7 +73,24 @@ app.post("/cadastro", async(req, res)=>{
 });
 
 app.post("/login", async(req, res)=>{
+    const email = req.body.email;
+    const password = req.body.password;
 
+    if (email == null || password == null) {
+        return res.status(400).json({ error: "Preencher todos os campos" });
+    }
+
+    try {
+        const usuario = await Usuario.findOne({ email: email, password: password });
+
+        if (!usuario) {
+            return res.status(401).json({ error: "Credenciais inválidas" });
+        }
+
+        res.json({ error: null, msg: "Login bem-sucedido", usuarioId: usuario._id });
+    } catch (error) {
+        res.status(400).json({ error });
+    }
 })
 
 app.get("/cadastro", async(req, res)=> {
