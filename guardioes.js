@@ -42,17 +42,17 @@ app.post("/cadastro", async(req, res)=>{
 
 
 
-    if(email == null || password == null || nome == null || endereco == null || numero == null || complemento == null || bairro == null || cidade == null || telefone == null){
-        return res.status(400).json({error: "Preencher todos os campos"})
+    if (email == null || password == null || nome == null || endereco == null || numero == null || complemento == null || bairro == null || cidade == null || telefone == null) {
+        return res.status(400).json({ error: "Preencher todos os campos" })
     }
 
-    const emailExiste = await Ong.findOne({email:email});
+    const emailExiste = await Usuario.findOne({ email: email });
 
-    if(emailExiste) {
-        return res.status(400).json({error: "O email informado já existe"})
+    if (emailExiste) {
+        return res.status(400).json({ error: "O email informado já existe" })
     }
 
-    const usuario = new Usuario ({
+    const usuario = new Usuario({
         nome: nome,
         email: email,
         endereco: endereco,
@@ -66,14 +66,13 @@ app.post("/cadastro", async(req, res)=>{
 
     try {
         const newUsuario = await usuario.save();
-
-        res.json({error : null, msg : "Cadastro feito com sucesso", usuarioId : newUsuario._id});
+        return res.json({ error: null, msg: "Cadastro feito com sucesso", usuarioId: newUsuario._id });
+    } catch (error) {
+        return res.status(400).json({ error });
     }
-    catch(error){
-        res.status(400).json({error});
-    }
+});
 
-    res.json({error: null, msg: "Teste feito com sucesso"});
+app.post("/login", async(req, res)=>{
 
 })
 
