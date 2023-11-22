@@ -13,7 +13,7 @@
 
 body {
     font-family: 'Poppins';
-    background-color: #0f0f0f;
+    background-color: #000000;
 }
 
 .header {
@@ -24,11 +24,12 @@ nav {
     padding: 0.6rem 1.2rem 0.6rem 1.2rem;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000;
+    background-color: transparent;
 }
 nav img {
     width: 60px;
 }
+
 .nav-links ul li {
     font-weight: bold;
     list-style: none;
@@ -37,21 +38,20 @@ nav img {
     position: relative;
 }
 .nav-links ul li a{
-    color: #c7ffb1;
+    color: #ffffff;
     text-decoration: none;
     font-size: 16px;
 
     transition: .3s;
 }
 .nav-links ul li #login{
-    color: #c7ffb1;
+    color: #ffffff;
     text-decoration: none;
     font-size: 16px;
     border-style: solid;
-    border-radius: 10px;
     border-width: 1px;
-    padding: 6px 25px;
-    border-color: #c7ffb1;
+    padding: 5px 30px;
+    border-color: #ffffff;
 
     transition: .3s;
 }
@@ -62,27 +62,70 @@ nav img {
     font-size: 16px;
     text-shadow: 0 0 15px #c7ffb1;
 }
-
 .nav-links ul li #login:hover{
+    letter-spacing: 0.25em;
     border-style: solid;
-    border-radius: 10px;
     border-width: 1px;
-    padding: 6px 25px;
+    padding: 5px 30px;
+    color: #c7ffb1;
     border-color: #c7ffb1;
-    background-color: #0d3000;
+    
     text-decoration: none;
     font-size: 16px;
     text-shadow: none;
 }
-
-::-webkit-scrollbar {
-    width: 8px;
+.sec1 {
+    box-shadow: 100px 100px 300px rgba(0,0,0,0.9) inset;
+    background-image: url(img/main01_eventos.png);
+    background-position: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #c7ffb1;
-    border-radius: 10px;
+.div1 {
+    height: 100vh;
 }
+
+.head1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+.head1 h1 {
+    text-align: center;
+    color: #f2ffed;
+    text-shadow: 0 0 15px #181818;
+    font-size: 4rem;
+
+}
+
+.head1 h2 {
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+
+
+#vejamais {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 10%;
+    text-shadow: 0 0 15px #00b31e;
+}
+
 
 .main01{
     display: flex;
@@ -108,7 +151,6 @@ nav img {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 20%;
     background-color: black;
 }
 
@@ -272,3 +314,144 @@ nav img {
     display: flex;
     flex-direction: row;
 }
+
+
+/*FOOTER*/
+.sec4 {
+    margin-top: 3rem;
+    background-color: #000000;
+    margin-left: 3rem;
+}
+
+footer{
+    list-style: none;
+    text-decoration: none;
+    position: relative;    
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+}
+
+footer .column .logo img{
+    max-width: 60px;
+}
+
+footer .column p{
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    text-decoration: none;
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover{
+    color: #000000;
+    background-color: #c7ffb1;
+    border-color: #c7ffb1;
+}
+
+footer .column h4{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .column > a{
+    text-decoration: none;
+    display: block;
+    color: #ccc;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .column > a:hover{
+    color: #c7ffb1;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    color: #0d3000;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #c7ffb1;
+    border-radius: 10px;
+  }
+  @media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+    .app{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sec3 {
+        background-position: 39%;
+        background-size: cover;
+        background-image: url(img/mimindo.png);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+    .text2 img {
+        width: 25rem;
+        padding-right: 0.6rem;
+    }
+}
+
+@media (width < 600px){
+    header .image::before{
+        display: none;
+    }
+
+    .app{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cont{
+        grid-template-columns: repeat(1, 1fr);
+}
+
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+
+    .text2 img {
+        align-self: center;
+        width: 10rem;
+        padding: 0.3rem;
+    }
+}
+
+/*Sim, o eu(Daniel) fiz tudo isso :)*/
+

@@ -443,8 +443,8 @@ nav img {
 
 #button{
     margin-top: 3rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -460,6 +460,8 @@ nav img {
     border-width: 1px;
     padding: 5px 30px;
     border-color: #ffffff;
+    width: fit-content;
+    text-align: center;
 
     transition: .3s;
 }
@@ -494,6 +496,12 @@ nav img {
     text-align: justify;
 }
 .text1 .p2{
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    color: white;
+    text-align: justify;
+}
+.text1 .p3{
     padding-left: 2rem;
     color: white;
     text-align: justify;

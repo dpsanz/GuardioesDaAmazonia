@@ -13,11 +13,17 @@
 
 body {
     font-family: 'Poppins';
-    background-color: #0f0f0f;
+    background-color: #000000;
 }
 
-.header {
+.sec1 {
+    box-shadow: 100px 100px 300px rgba(0,0,0,0.9) inset;
+    background-position: 100%;
+    background-size: cover;
+    min-height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 nav {
     display: flex;
@@ -25,6 +31,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
+    background-color: #000000;
 }
 nav img {
     width: 60px;
@@ -75,85 +82,568 @@ nav img {
     text-shadow: none;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
+.div1 {
+    backdrop-filter: brightness(64%);
+    height: 100vh;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #c7ffb1;
-    border-radius: 10px;
+.head1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+.head1 h1 {
+    text-align: center;
+    color: #f2ffed;
+    text-shadow: 0 0 15px #181818;
+    font-size: 4rem;
+
 }
 
-.main01{
+.head1 h2 {
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+
+
+#vejamais {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.main01 img{
+    color: white;
     position: absolute;
-    width: 100%;
-    z-index: -100;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 10%;
+    text-shadow: 0 0 15px #00b31e;
 }
 
-.main01 h1{
-    font-size: 20vh;
-    color: #588647;
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+/*SEGUNDA PARTE*/
+.sec2 {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    border-top-style: solid;
+    background-position: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div2 {
+    height: 100vh;
+
+}
+
+.head2 {
+    width: 100%;
+}
+.head2 h1 {
+    margin-top: 20px;
+    color: #f2ffed;
+    text-shadow: 0 0 15px #181818;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.head2 h2 {
+    text-align: center;
+    color: white;
+}
+
+.head3 {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+/*PARTE DOS CARDS*/
+.container{
+   margin: 1rem;
+}
+
+.app{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+/*CARD1*/
+.app .card1{
+    height: 20rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    transition: all 0.3s ease;
+
+}
+
+.app .card1:hover{
+    background-color: rgba(130, 0, 0, 0.832);
+    border-color: #fff;
+}
+
+.app .card1 .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.app .card1 h4{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.app .card1 img{
+    margin-left: 45%;
+    width: 50px;
+    padding-bottom: 1rem;
+}
+
+.app .card1 p{
+    text-align: justify;
+    color: #fff;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 0 15px#000000;
+}
+
+.app .card1 p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.app .card1 #button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    color: white;
+    font-family: 'Poppins';
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    border-color: #ffffff;
+
+    transition: .3s;
+}
+
+.app .card1 #button:hover{
+    letter-spacing: 0.35em;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    color: #c7ffb1;
+    border-color: #c7ffb1;
+    
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: none;
+}
+
+
+/*CARD2*/
+.app .card2{
+
+    height: 20rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    transition: all 0.3s ease;
+    
+}
+.app .card2:hover{
+    background-color: rgba(0, 130, 7, 0.832);
+    border-color: #fff;
+}
+
+.app .card2 .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.app .card2 h4{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.app .card2 img{
+    margin-left: 45%;
+    width: 50px;
+    padding-bottom: 1rem;
+}
+
+.app .card2 p{
+    text-align: justify;
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.app .card2 p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+    text-shadow: 0 0 15px#000000;
+}
+
+.app .card2 #button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    color: white;
+    font-family: 'Poppins';
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    border-color: #ffffff;
+
+    transition: .3s;
+}
+
+.app .card2 #button:hover{
+    letter-spacing: 0.35em;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    color: #c7ffb1;
+    border-color: #c7ffb1;
+    
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: none;
+}
+/*CARD3*/
+.app .card3{
+
+    height: 20rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    transition: all 0.3s ease;
+    
+}
+.app .card3:hover{
+    background-color: rgba(0, 63, 130, 0.832);
+    border-color: #fff;
+}
+
+.app .card3 .content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.app .card3 h4{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.app .card3 img{
+    margin-left: 45%;
+    width: 50px;
+    padding-bottom: 1rem;
+}
+
+.app .card3 p{
+    text-align: justify;
+    color: #fff;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 0 15px#000000;
+}
+
+.app .card3 p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.app .card3 #button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    color: white;
+    font-family: 'Poppins';
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    border-color: #ffffff;
+
+    transition: .3s;
+}
+
+.app .card3 #button:hover{
+    letter-spacing: 0.35em;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    color: #c7ffb1;
+    border-color: #c7ffb1;
+    
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: none;
+}
+/*TERCEIRA PARTE*/
+.sec3 {
+    min-height: 100vh;
+    background-position: 100%;
+    background-size: cover;
+    background-image: url(img/mimindo.png);
+}
+.cont{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#button{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    color: white;
+    font-family: 'Poppins';
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    border-color: #ffffff;
+    width: fit-content;
+    text-align: center;
+
+    transition: .3s;
+}
+
+#button:hover{
+    letter-spacing: 0.35em;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    color: #c7ffb1;
+    border-color: #c7ffb1;
+    
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: none;
+}
+.head {
+    margin-top: 4rem;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+.text1 {
+    padding-left: 2rem;
+    color: white;
+    text-align: justify;
+}
+.text1 .p1{
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    color: white;
+    text-align: justify;
+}
+.text1 .p2{
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    color: white;
+    text-align: justify;
+}
+.text1 .p3{
+    padding-left: 2rem;
+    color: white;
+    text-align: justify;
+}
+
+
+.text2 {
+    color: white;
+    text-align: justify;
+}
+.text2 img {
+    width: 60rem;
+    padding-right: 1rem;
+}
+/*FOOTER*/
+.sec4 {
+    background-color: #000000;
+    margin-left: 3rem;
+}
+
+footer{
+    list-style: none;
+    text-decoration: none;
+    position: relative;    
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+}
+
+footer .column .logo img{
+    max-width: 60px;
+}
+
+footer .column p{
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    text-decoration: none;
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover{
+    color: #000000;
+    background-color: #c7ffb1;
+    border-color: #c7ffb1;
+}
+
+footer .column h4{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .column > a{
+    text-decoration: none;
+    display: block;
+    color: #ccc;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .column > a:hover{
+    color: #c7ffb1;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
     text-align: center;
 }
 
-.main02{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20%;
-    background-color: black;
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    color: #0d3000;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #c7ffb1;
+    border-radius: 10px;
+  }
+  @media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+    .app{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sec3 {
+        background-position: 39%;
+        background-size: cover;
+        background-image: url(img/mimindo.png);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+    .text2 img {
+        width: 25rem;
+        padding-right: 0.6rem;
+    }
 }
 
-.main02 h1{
-    color: #C7FFB1;
-    text-shadow: 56px 35px 11px rgba(0, 0, 0, 0.25);
-    font-family: Poppins;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 45px;
+@media (width < 600px){
+    header .image::before{
+        display: none;
+    }
+
+    .app{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cont{
+        grid-template-columns: repeat(1, 1fr);
 }
 
-.main02 div h1{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+
+    .text2 img {
+        align-self: center;
+        width: 10rem;
+        padding: 0.3rem;
+    }
 }
 
-.main02 div p{
-    color: #C7FFB1;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-right: 800px;
-    font-size: 20px;
-}
-
-.main03{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20%;
-    
-}
-
-.main03 div{
-    width: 100%;
-    display: flex;
-    color: #C7FFB1;
-    width: 100%;
-    display: flex;
-    margin-left: 500px;
-    font-size: 20px;
-}
-
-
+/*Sim, o eu(Daniel) fiz tudo isso :)*/
