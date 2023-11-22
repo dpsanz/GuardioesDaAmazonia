@@ -17,7 +17,8 @@ body {
 }
 
 .sec1 {
-    background-image: url(img/back.jpg);
+    box-shadow: 100px 100px 300px rgba(0,0,0,0.9) inset;
+    background-image: url(img/back1.png);
     background-position: 100%;
     background-size: cover;
     min-height: 100vh;
@@ -30,7 +31,8 @@ nav {
     padding: 0.6rem 1.2rem 0.6rem 1.2rem;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000;
+    background-color: transparent;
+    backdrop-filter: brightness(64%);
 }
 nav img {
     width: 60px;
@@ -103,16 +105,19 @@ nav img {
 }
 
 .head1 h2 {
+    font-weight: 400;
     text-align: center;
     color: white;
 }
+
+
 
 #vejamais {
     display: flex;
     flex-direction: column;
     color: white;
     position: absolute;
-    top: 90%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -122,8 +127,10 @@ nav img {
 
 
 .sec2 {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
     border-top-style: solid;
-    background-image: url(img/dark.jpg);
     background-position: 100%;
     background-size: cover;
     min-height: 100vh;
@@ -133,21 +140,19 @@ nav img {
 }
 
 .div2 {
-    display: flex;
-    flex-direction: column;
     height: 100vh;
 
 }
 
 .head2 {
-    text-align: center;
     width: 100%;
 }
 .head2 h1 {
-    text-align: center;
+    margin-top: 20px;
     color: #f2ffed;
     text-shadow: 0 0 15px #181818;
-    font-size: 2rem;
+    font-size: 3rem;
+    text-align: center;
 
 }
 
@@ -155,6 +160,96 @@ nav img {
     text-align: center;
     color: white;
 }
+
+.head3 {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+/*PARTE DOS CARDS*/
+.container{
+   margin: 1rem;
+}
+
+.pricing{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing .card{
+    height: 40rem;
+    padding: 3rem 2rem;
+    background-image: ;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.pricing .card:hover{
+    border-color: #fff;
+}
+
+.pricing .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card button{
+    text-decoration: none;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    border-color: #ffffff;
+
+    transition: .3s;
+}
+
+.pricing .card button:hover{
+    letter-spacing: 0.25em;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    color: #c7ffb1;
+    border-color: #c7ffb1;
+    
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: none;
+}
+
+
 
 ::-webkit-scrollbar {
     width: 8px;
