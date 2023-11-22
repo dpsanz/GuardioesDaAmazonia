@@ -178,54 +178,63 @@ nav img {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-
-.pricing .card{
-    height: 40rem;
+/*CARD1*/
+.pricing .card1{
+    background-image: url(img/fire.jpg);
+    background-position: 40%;
+    background-size: cover;
+    height: 50rem;
     padding: 3rem 2rem;
-    background-image: ;
     display: flex;
     flex-direction: column;
-    border: 2px solid transparent;
+    border: 1px solid #000000;
     transition: all 0.3s ease;
+    box-shadow: 100px 100px 300px rgba(0,0,0,0.9) inset;
+
 }
 
-.pricing .card:hover{
+.pricing .card1:hover{
     border-color: #fff;
 }
 
-.pricing .card .content{
+.pricing .card1 .content{
     flex: 1;
     margin-bottom: 2rem;
 }
 
-.pricing .card h4{
+.pricing .card1 h4{
+    text-align: center;
     margin-bottom: 1rem;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
-.pricing .card h3{
-    color: #fff;
+.pricing .card1 img{
+    margin-left: 45%;
+    width: 45px;
+    height: 60px;
     padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: 600;
-    border-bottom: 2px dashed #fff;
 }
 
-.pricing .card p{
+.pricing .card1 p{
+    text-align: justify;
     color: #fff;
     margin-bottom: 0.75rem;
 }
 
-.pricing .card p i{
+.pricing .card1 p i{
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
 
-.pricing .card button{
+.pricing .card1 #button a{
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    color: white;
+    font-family: 'Poppins';
+    letter-spacing: 0.2em;
     text-decoration: none;
     font-size: 16px;
     border-style: solid;
@@ -236,8 +245,8 @@ nav img {
     transition: .3s;
 }
 
-.pricing .card button:hover{
-    letter-spacing: 0.25em;
+.pricing .card1 #button a:hover{
+    letter-spacing: 0.35em;
     border-style: solid;
     border-width: 1px;
     padding: 5px 30px;
@@ -249,6 +258,165 @@ nav img {
     text-shadow: none;
 }
 
+
+/*CARD2*/
+.pricing .card2{
+    background-image: url(img/monke.jpg);
+    background-position: 60%;
+    background-size: cover;
+    height: 50rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    transition: all 0.3s ease;
+    box-shadow: 100px 100px 300px rgba(0,0,0,0.9) inset;
+}
+
+.pricing .card2:hover{
+    border-color: #fff;
+}
+
+.pricing .card2 .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card2 h4{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.pricing .card2 img{
+    margin-left: 45%;
+    width: 50px;
+    height: 70px;
+    padding-bottom: 1rem;
+}
+
+.pricing .card2 p{
+    text-align: justify;
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card2 p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card2 #button a{
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    color: white;
+    font-family: 'Poppins';
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    border-color: #ffffff;
+
+    transition: .3s;
+}
+
+.pricing .card2 #button a:hover{
+    letter-spacing: 0.35em;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    color: #c7ffb1;
+    border-color: #c7ffb1;
+    
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: none;
+}
+/*CARD3*/
+.pricing .card3{
+    background-image: url(img/water.jpg);
+    height: 50rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    transition: all 0.3s ease;
+    box-shadow: 100px 100px 300px rgba(0,0,0,0.9) inset;
+}
+
+.pricing .card3:hover{
+    border-color: #fff;
+}
+
+.pricing .card3 .content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card3 h4{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.pricing .card3 img{
+    margin-left: 45%;
+    width: 50px;
+    height: 70px;
+    padding-bottom: 1rem;
+}
+
+.pricing .card3 p{
+    text-align: justify;
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card3 p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card3 #button a{
+    justify-content: end;
+    margin-left: 33%;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    color: white;
+    font-family: 'Poppins';
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    border-color: #ffffff;
+
+    transition: .3s;
+}
+
+.pricing .card3 #button a:hover{
+    letter-spacing: 0.35em;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    color: #c7ffb1;
+    border-color: #c7ffb1;
+    
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: none;
+}
 
 
 ::-webkit-scrollbar {
@@ -262,3 +430,41 @@ nav img {
     background: #c7ffb1;
     border-radius: 10px;
   }
+  @media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+    .features{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pricing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 600px){
+    header .image::before{
+        display: none;
+    }
+
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+}
