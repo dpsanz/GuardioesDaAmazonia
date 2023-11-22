@@ -220,6 +220,7 @@ nav img {
     text-align: justify;
     color: #fff;
     margin-bottom: 0.75rem;
+    text-shadow: 0 0 15px#000000;
 }
 
 .app .card1 p i{
@@ -309,6 +310,7 @@ nav img {
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
+    text-shadow: 0 0 15px#000000;
 }
 
 .app .card2 #button{
@@ -384,6 +386,7 @@ nav img {
     text-align: justify;
     color: #fff;
     margin-bottom: 0.75rem;
+    text-shadow: 0 0 15px#000000;
 }
 
 .app .card3 p i{
@@ -426,15 +429,89 @@ nav img {
 }
 /*TERCEIRA PARTE*/
 .sec3 {
-    min-height: 140vh;
+    min-height: 100vh;
+    background-position: 100%;
     background-size: cover;
     background-image: url(img/mimindo.png);
 }
+.cont{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#button{
+    margin-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    color: white;
+    font-family: 'Poppins';
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    border-color: #ffffff;
+
+    transition: .3s;
+}
+
+#button:hover{
+    letter-spacing: 0.35em;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 30px;
+    color: #c7ffb1;
+    border-color: #c7ffb1;
+    
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: none;
+}
+.head {
+    margin-top: 4rem;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+.text1 {
+    padding-left: 2rem;
+    color: white;
+    text-align: justify;
+}
+.text1 .p1{
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    color: white;
+    text-align: justify;
+}
+.text1 .p2{
+    padding-left: 2rem;
+    color: white;
+    text-align: justify;
+}
 
 
+.text2 {
+    color: white;
+    text-align: justify;
+}
+.text2 img {
+    width: 60rem;
+    padding-right: 1rem;
+}
 /*FOOTER*/
 .sec4 {
     background-color: #000000;
+    margin-left: 3rem;
 }
 
 footer{
@@ -485,6 +562,7 @@ footer .column h4{
 }
 
 footer .column > a{
+    text-decoration: none;
     display: block;
     color: #ccc;
     margin-bottom: 1rem;
@@ -492,7 +570,7 @@ footer .column > a{
 }
 
 footer .column > a:hover{
-    color: #1d4ed8;
+    color: #c7ffb1;
 }
 
 .copyright{
@@ -529,8 +607,17 @@ footer .column > a:hover{
     .app{
         grid-template-columns: repeat(2, 1fr);
     }
+    .sec3 {
+        background-position: 39%;
+        background-size: cover;
+        background-image: url(img/mimindo.png);
+    }
     footer{
         grid-template-columns: 1fr 200px;
+    }
+    .text2 img {
+        width: 25rem;
+        padding-right: 0.6rem;
     }
 }
 
@@ -542,8 +629,19 @@ footer .column > a:hover{
     .app{
         grid-template-columns: repeat(1, 1fr);
     }
+    .cont{
+        grid-template-columns: repeat(1, 1fr);
+}
 
     footer{
         grid-template-columns: 1fr 150px;
     }
+
+    .text2 img {
+        align-self: center;
+        width: 10rem;
+        padding: 0.3rem;
+    }
 }
+
+/*Sim, o eu(Daniel) fiz tudo isso :)*/
