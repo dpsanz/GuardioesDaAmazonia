@@ -172,14 +172,14 @@ nav img {
    margin: 1rem;
 }
 
-.pricing{
+.app{
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 /*CARD1*/
-.pricing .card1{
+.app .card1{
     background-image: url(img/fire.jpg);
     background-position: 40%;
     background-size: cover;
@@ -193,16 +193,16 @@ nav img {
 
 }
 
-.pricing .card1:hover{
+.app .card1:hover{
     border-color: #fff;
 }
 
-.pricing .card1 .content{
+.app .card1 .content{
     flex: 1;
     margin-bottom: 2rem;
 }
 
-.pricing .card1 h4{
+.app .card1 h4{
     text-align: center;
     margin-bottom: 1rem;
     color: #fff;
@@ -210,26 +210,29 @@ nav img {
     font-weight: 500;
 }
 
-.pricing .card1 img{
+.app .card1 img{
     margin-left: 45%;
-    width: 45px;
-    height: 60px;
+    width: 50px;
     padding-bottom: 1rem;
 }
 
-.pricing .card1 p{
+.app .card1 p{
     text-align: justify;
     color: #fff;
     margin-bottom: 0.75rem;
 }
 
-.pricing .card1 p i{
+.app .card1 p i{
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
 
-.pricing .card1 #button a{
+.app .card1 #button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: transparent;
     backdrop-filter: blur(8px);
     color: white;
@@ -245,7 +248,7 @@ nav img {
     transition: .3s;
 }
 
-.pricing .card1 #button a:hover{
+.app .card1 #button:hover{
     letter-spacing: 0.35em;
     border-style: solid;
     border-width: 1px;
@@ -260,7 +263,7 @@ nav img {
 
 
 /*CARD2*/
-.pricing .card2{
+.app .card2{
     background-image: url(img/monke.jpg);
     background-position: 60%;
     background-size: cover;
@@ -273,16 +276,16 @@ nav img {
     box-shadow: 100px 100px 300px rgba(0,0,0,0.9) inset;
 }
 
-.pricing .card2:hover{
+.app .card2:hover{
     border-color: #fff;
 }
 
-.pricing .card2 .content{
+.app .card2 .content{
     flex: 1;
     margin-bottom: 2rem;
 }
 
-.pricing .card2 h4{
+.app .card2 h4{
     text-align: center;
     margin-bottom: 1rem;
     color: #fff;
@@ -290,26 +293,29 @@ nav img {
     font-weight: 500;
 }
 
-.pricing .card2 img{
+.app .card2 img{
     margin-left: 45%;
     width: 50px;
-    height: 70px;
     padding-bottom: 1rem;
 }
 
-.pricing .card2 p{
+.app .card2 p{
     text-align: justify;
     color: #fff;
     margin-bottom: 0.75rem;
 }
 
-.pricing .card2 p i{
+.app .card2 p i{
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
 
-.pricing .card2 #button a{
+.app .card2 #button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: transparent;
     backdrop-filter: blur(8px);
     color: white;
@@ -325,7 +331,7 @@ nav img {
     transition: .3s;
 }
 
-.pricing .card2 #button a:hover{
+.app .card2 #button:hover{
     letter-spacing: 0.35em;
     border-style: solid;
     border-width: 1px;
@@ -338,29 +344,29 @@ nav img {
     text-shadow: none;
 }
 /*CARD3*/
-.pricing .card3{
+.app .card3{
     background-image: url(img/water.jpg);
     height: 50rem;
     padding: 3rem 2rem;
-    display: flex;
     flex-direction: column;
     border: 1px solid #000000;
     transition: all 0.3s ease;
     box-shadow: 100px 100px 300px rgba(0,0,0,0.9) inset;
+    display: flex;
 }
 
-.pricing .card3:hover{
+.app .card3:hover{
     border-color: #fff;
 }
 
-.pricing .card3 .content{
+.app .card3 .content{
     display: flex;
     flex-direction: column;
     flex: 1;
     margin-bottom: 2rem;
 }
 
-.pricing .card3 h4{
+.app .card3 h4{
     text-align: center;
     margin-bottom: 1rem;
     color: #fff;
@@ -368,28 +374,29 @@ nav img {
     font-weight: 500;
 }
 
-.pricing .card3 img{
+.app .card3 img{
     margin-left: 45%;
     width: 50px;
-    height: 70px;
     padding-bottom: 1rem;
 }
 
-.pricing .card3 p{
+.app .card3 p{
     text-align: justify;
     color: #fff;
     margin-bottom: 0.75rem;
 }
 
-.pricing .card3 p i{
+.app .card3 p i{
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
 
-.pricing .card3 #button a{
-    justify-content: end;
-    margin-left: 33%;
+.app .card3 #button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: transparent;
     backdrop-filter: blur(8px);
     color: white;
@@ -405,7 +412,7 @@ nav img {
     transition: .3s;
 }
 
-.pricing .card3 #button a:hover{
+.app .card3 #button:hover{
     letter-spacing: 0.35em;
     border-style: solid;
     border-width: 1px;
@@ -440,10 +447,7 @@ nav img {
     header .image{
         grid-area: 1/1/2/2;
     }
-    .features{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .pricing{
+    .app{
         grid-template-columns: repeat(2, 1fr);
     }
     footer{
@@ -456,11 +460,7 @@ nav img {
         display: none;
     }
 
-    .features{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .pricing{
+    .app{
         grid-template-columns: repeat(1, 1fr);
     }
 
